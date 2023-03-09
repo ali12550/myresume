@@ -4,7 +4,7 @@ var canvas = document.getElementById('nokey'),
    ctx = canvas.getContext('2d');
 
 // console.log(typeof can_w);
-var BALL_NUM = 30
+var BALL_NUM = 40
 
 var ball = {
       x: 0,
@@ -17,9 +17,9 @@ var ball = {
    },
    
    ball_color = {
-       r: 255,
-       g: 255,
-       b: 255
+       r: 155,
+       g: 155,
+       b: 55
    },
    R = 2,
    balls = [],

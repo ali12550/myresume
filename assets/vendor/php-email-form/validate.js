@@ -1,7 +1,7 @@
 /**
 * PHP Email Form Validation - v3.5
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
+* URL: https://By Ali Raza.com/php-email-form/
+* Author: By Ali Raza.com
 */
 (function () {
   "use strict";

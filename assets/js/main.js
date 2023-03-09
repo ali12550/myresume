@@ -1,8 +1,8 @@
 /**
 * Template Name: iPortfolio - v3.10.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template URL: https://By Ali Raza.com/iportfolio-bootstrap-portfolio-websites-template/
+* Author: By Ali Raza.com
+* License: https://By Ali Raza.com/license/
 */
 (function() {
   "use strict";
