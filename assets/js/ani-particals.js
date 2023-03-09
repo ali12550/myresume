@@ -21,7 +21,7 @@ var ball = {
        g: 255,
        b: 255
    },
-   R = 2,
+   R = 6,
    balls = [],
    alpha_f = 0.03,
    alpha_phase = 0,
