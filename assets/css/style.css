@@ -497,7 +497,7 @@ section {
   width           : 1px;
   height          : 10px;
   transition      : 0.9s;
-  background-color: linear-gradient(90deg, #3c4cad, #00b4db) !important;
+  background: linear-gradient(90deg, #3c4cad, #00b4db) !important;
 }
 
 /*--------------------------------------------------------------
@@ -514,9 +514,12 @@ section {
 .resume .resume-item {
   padding    : 0 0 20px 20px;
   margin-top : -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid;
   position   : relative;
-}
+ 
+    border-image: linear-gradient(90deg, #3c4cad, #00b4db) 1;
+  }
+
 
 .resume .resume-item h4 {
   line-height   : 18px;
