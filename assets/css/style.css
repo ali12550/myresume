@@ -792,7 +792,7 @@ section {
   line-height: 24px;
   font-size  : 14px;
 }
-@media screen and(max-width:768px){
+@media screen and (max-width:768px){
   .services .description{
     margin-left:50px;
   }
