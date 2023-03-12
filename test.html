@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+header {
+  background: linear-gradient(90deg, #1e293d, #0f1724);
+  color: white;
+  padding: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:last-of-type {
+  margin-right: 0;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .header-content {
+    text-align: center;
+  }
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the text is not revealed until the animation */
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap; /* Keeps the text on one line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+/* The typewriter cursor */
+.cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="#">Login</a>
+          <a href="#">Signup</a>
+          <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+          </div>
+        </nav>
+        <div class="header-content">
+          <h1>Welcome to my website!</h1>
+          <p class="typewriter">I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+      </header>
+      
+</body>
+</html>
+<script>
+    // Define the words you want to display
+const words = ["front-end developer", "graphic designer", "photographer"];
+
+let i = 0;
+let timer;
+
+// Set up the typing effect
+function typingEffect() {
+  let word = words[i];
+  let j = 0;
+  timer = setInterval(() => {
+    if (j < word.length) {
+      document.querySelector(".typed-text").textContent += word.charAt(j);
+      j++;
+    } else {
+      clearInterval(timer);
+      setTimeout(() => {
+        timer = setInterval(() => {
+          if (j > 0) {
+            document.querySelector(".typed-text").textContent = word.substring(0, j - 1);
+            j--;
+          } else {
+            clearInterval(timer);
+            i++;
+            if (i == words.length) {
+              i = 0;
+            }
+            setTimeout(typingEffect, 500);
+          }
+        }, 100);
+      }, 1000);
+    }
+  }, 100);
+}
+
+typingEffect();
+
+</script>

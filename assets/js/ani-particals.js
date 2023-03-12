@@ -28,7 +28,7 @@ var ball = {
     
 // Line
    link_line_width = 0.8,
-   dis_limit = 400,
+   dis_limit = 300,
    add_mouse_point = true,
    mouse_in = false,
    mouse_ball = {
@@ -172,7 +172,7 @@ function renderLines(){
            if(fraction < 1){
                alpha = (1 - fraction).toString();
 
-               ctx.strokeStyle = 'rgba(150,150,150,'+alpha+')';
+               ctx.strokeStyle = 'rgba(255,255,100,'+alpha+')';
                ctx.lineWidth = link_line_width;
                
                ctx.beginPath();
