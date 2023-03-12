@@ -43,6 +43,7 @@ h6 {
   bottom: 15px;
   z-index: 996;
   background: #149ddd;
+  border: 1px solid #fff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -237,15 +238,18 @@ h6 {
 }
 .slide-top{animation:slide-top 4s linear 2s infinite alternate both}
 @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-20px)}}
-#hero:before {
-  /* content: "";
+/* #hero:before {
+  content: "";
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1; */
+  z-index: 1;
+} */
+#nokey{
+  
 }
 
 #hero .hero-container {
@@ -274,7 +278,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #fff;
 }
 #hero button{
   background: #149ddd;
@@ -295,6 +299,8 @@ h6 {
     font-size: 28px;
     line-height: 36px;
   }
+  #hero {
+    height: auto;}
 
   #hero h2 {
     font-size: 18px;
