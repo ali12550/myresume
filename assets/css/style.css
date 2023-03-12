@@ -318,13 +318,16 @@ h6 {
   }
 
   #hero h2 {
-    font-size    : 18px;
-    line-height  : 24px;
-    margin-bottom: 30px;
+    font-size    : 28px;
+    line-height  : 20px;
+    margin-bottom: 24px;
   }
 
   #nokey {
     display: none;
+  }
+  section{
+padding:30px 20px !important;
   }
 }
 
@@ -789,7 +792,14 @@ section {
   line-height: 24px;
   font-size  : 14px;
 }
-
+@media screen and(max-width:768px){
+  .services .description{
+    margin-left:50px;
+  }
+  .services .title{
+    margin-left:50px;
+  }
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -846,7 +856,7 @@ section {
 
 .testimonials .testimonial-item p {
   font-style   : italic;
-  margin       : 0 15px 15px 15px;
+  margin       : 0 0px 15px 0px;
   padding      : 20px;
   background   : #fff;
   position     : relative;
@@ -893,7 +903,7 @@ section {
 }
 
 .contact .info {
-  padding   : 30px;
+  padding   : 30px 30px;
   background: #fff;
   width     : 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1131,6 +1141,28 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+  .contact .info {
+    padding   : 30px 8px;
+  }
+  .contact .info p {
+    padding      : 0 0 10px 44px;
+  }
+  .contact .info h4{
+    padding:0px 0px 0px 44px;
+  }
+  .services .icon{
+    width:35px;
+    height:35px
+  }
+  .services .icon i{
+    font-size:18px;
+  }
+  .contact .info i {
+    width          : 30px;
+    height         : 30px;
+    font-size: 16px;
+  }
+
 }
 
 /*--------------------------------------------------------------
