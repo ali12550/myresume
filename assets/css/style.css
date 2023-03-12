@@ -236,7 +236,7 @@ h6 {
   background:  linear-gradient(90deg, #3c4cad, #00b4db);
 }
 .slide-top{animation:slide-top 4s linear 2s infinite alternate both}
-@keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+@keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-20px)}}
 #hero:before {
   /* content: "";
   background: rgba(5, 13, 24, 0.3);

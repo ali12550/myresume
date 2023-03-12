@@ -17,9 +17,9 @@ var ball = {
    },
    
    ball_color = {
-       r: 255,
-       g: 255,
-       b: 255
+       r: 0,
+       g: 0,
+       b: 0
    },
    R = 2,
    balls = [],
@@ -172,7 +172,7 @@ function renderLines(){
            if(fraction < 1){
                alpha = (1 - fraction).toString();
 
-               ctx.strokeStyle = 'rgba(255,255,100,'+alpha+')';
+               ctx.strokeStyle = 'rgba(255,255,255,'+alpha+')';
                ctx.lineWidth = link_line_width;
                
                ctx.beginPath();
